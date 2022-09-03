@@ -1,0 +1,26 @@
+.cardx{
+    width: 60%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    height: 29vh;
+    position: relative;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 450px) {
+    .cardx{
+        height: 20vh;
+        width: 90%;
+        margin: 0 auto;
+        transform: translateX(15px);
+    }
+
+    .meh{
+        padding: 0px;
+    }
+
+    .cardx p{
+        font-size: 10px;
+    }
+}

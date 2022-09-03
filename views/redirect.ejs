@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRLS Dashboard</title>
+    <link rel="stylesheet" href="/main.css">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit-icons.min.js"></script>
+</head>
+<body>
+    <style>
+        .contactx{
+            background-color: rgb(132, 0, 255);
+        }
+
+        html{
+            font-size: 21px;
+        }
+
+        .navbarx a:hover{
+            text-decoration: none;
+        }
+
+        .ah1{
+            text-align: center;font-size: 40px
+        }
+
+        .ahr{
+            width: 100px;
+            border: 0.1px solid blueviolet;
+            left: 50%;
+            position: relative;
+            transform: translateX(-50%);
+            margin: 30px 0;
+        }
+
+        .fzide{
+            font-size: 18px;
+        }
+
+        .a2{
+            text-align: center;
+            color: blueviolet;
+            font-size: 20px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            .ah1{
+                font-size:30px
+            }
+
+            .fzide{
+                font-size:14px
+            }
+
+            .meh22{
+                font-size: 20px;
+            }
+
+            .a2{
+                font-size: 13px;
+            }
+
+            span{
+                font-size: 13px;
+            }
+
+        }
+    </style>
+
+        <nav class="navbarx">
+            <a style="align-self: center;" href="/"><h1 class="logo">BRLS Dashboard!</h1></a>
+        
+            <ul class="tags">
+                <a  target="__blank" href="https://discord.com/api/oauth2/authorize?client_id=983816126460997662&permissions=8&scope=bot">Add
+                    Bot</a>
+                
+            </ul>
+        
+        
+            <a
+                    <a href="https://brlsbot.xyz"><button class="contactx">Logout</button></a>
+        </nav>
+        
+
+
+        <h1 class="ah1">Welcome <%= data[1].username %>#<%=data[1].discriminator%></h1>
+        <hr class="ahr" >
+
+
+
+
+        <div style="padding: 30px" class="uk-card uk-card-default a1">
+            <div class="uk-card-header">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                        <img class="uk-border-circle" width="40" height="40" src="https://cdn.discordapp.com/avatars/<%= data[1].id %>/<%= data[1].avatar %>.png?size=4096">
+                    </div>
+                    <div class="uk-width-expand">
+                        <h3 class="uk-card-title uk-margin-remove-bottom meh22">User Information</h3>
+                        <p class="uk-text-meta uk-margin-remove-top"><%= data[1].username %>#<%=data[1].discriminator%></p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-card-body">
+                <p class="fzide">ID: <%= data[1].id %></</p>
+                <p class="fzide">Email: <%= data[1].email %></p>
+                <p class="fzide">Country Tag: <%= data[1].locale %></p>
+                <p class="fzide">Flags: <%= data[1].flags %> and Public Flags : <%= data[1].public_flags %></p>
+                <p class="fzide">Mfa Enabled : <%= data[1].mfa_enabled %></p>
+            </div>
+            <div class="uk-card-footer">
+                <%if(data[1].verified == true){%>
+                    <span class="uk-label uk-label-success">Verified</span>
+                <%}else{%>
+                <span class="uk-label uk-label-danger">Not Verified</span>
+                <%}%>
+            </div>
+        </div>
+
+
+        <br>
+    <div class="all">
+    <% data[2].forEach(data => { %>
+
+        <% if(data.owner==true){ %>
+
+            <div style="text-align: center;" class="card">
+                <div class="card-image">
+                    <figure class="majie" style="position: relative;" class="image is-4by3">
+                        <% if(data.icon != null){ %>
+                            <a class="mehxy" target="__blank" href="https://discord.com/api/oauth2/authorize?client_id=983816126460997662&guild_id=<%=data.id%>&permissions=8&scope=bot"><img class="mehpic2" src="https://cdn.discordapp.com/attachments/878046902325751868/1015466019407536188/unknown.png" alt="Placeholder image"></a>
+                        <% }else{ %>
+                        <a  class="mehxy" target="__blank" href="https://discord.com/api/oauth2/authorize?client_id=983816126460997662&guild_id=<%=data.id%>&permissions=8&scope=bot"><img class="mehpic2" src="https://i.imgur.com/gGAOi3m.png"
+                                alt="Placeholder image"></a>
+                        <% } %>
+                        <div class="info">
+                            <p><%=data.name%></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+        <% } %>
+
+    <%}) %>  
+    </div>
+
+</body>
+</html>

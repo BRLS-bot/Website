@@ -1,0 +1,717 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.impx2{
+    padding: 50px;
+    padding-bottom: 100px;
+}
+
+
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    padding: 0px;
+}
+
+/* ------------------------------------------------------------------- SECTION : header ------------------------------------------------------------------------>
+
+
+/* -------------- NAVBAR ------------- */
+
+.navbarx{
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.904);
+    padding: 15px;
+}
+
+.logo{
+    font-size: 29px;
+    color: white;
+    margin: 0;
+    align-self: center;
+}
+
+.tags{
+    position: relative;
+    align-self: center;
+    margin: 0;
+}
+
+.tags a:visited, .tags a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    padding: 0px 25px;
+}
+
+.tags a:hover{
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.contactx{
+    color: white;
+    align-self: center;
+    font-weight: 500;
+    font-size: 13px;
+    border: 2px solid blueviolet;
+    border-radius: 100px;
+    background-color: blueviolet;
+    text-align: center;
+    padding: 10px;
+    width: 120px;
+}
+
+.contactx:hover{
+    color: white;
+}
+
+/* -------------- Header ------------- */
+
+.headerx{
+    background-attachment: fixed;
+    background-image: url('https://cdn.discordapp.com/attachments/931981882520895538/1015046155903705169/unknown.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    height: 70vh;
+}
+
+.textx{
+    position: absolute;
+    color: white;
+    top: 25%;
+    left: 16.7%;
+    transform: translate(-25%,-10%);
+
+}
+.textx h1{
+    font-size: 45px;
+      color: blueviolet;
+    font-weight: 400;
+}
+
+
+.textx h2, .textx span{
+    font-size: 30px;
+    color: white;
+    padding-bottom: 15px;
+    font-weight: 300;
+}
+
+
+.textx button{
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 100px;
+    border: 2px solid blueviolet;
+    background-color: blueviolet;
+    color: white;
+    position: absolute;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.textx button:hover{
+    background-color: rgba(132, 0, 255, 0.74);
+}
+
+.skema{
+    font-size: 2px;
+}
+
+label{
+    font-size:18px;padding:5px
+}
+
+.grid{
+    width: 30%;
+    height: 30vh;
+    background-image: url(./images/pattern-dot-grid.svg);
+    background-size: 24px 24px;
+    opacity: .15;
+    position: absolute;
+    right: 0;
+    bottom: 0%;
+    background-attachment: fixed;
+    z-index: 1;
+}
+/* -------------- ICONS ------------- */
+
+.icons i{
+    font-size: 23px;
+    color: blueviolet;
+    margin: 16px;
+}
+
+.icons{
+
+    position: absolute;
+    top: 85%;
+    left: 16.7%;
+    transform: translate(-62%,-10%);
+
+}
+
+.skema{
+    font-size: 20px;
+}
+
+/* ------------------- MEDIA QUERIES ----------------- */
+
+@media only screen and (max-width: 768px) {
+
+
+
+  .textx h1 {
+    font-size: 20px;
+  }
+
+  .textx h2{
+    font-size: 17px;
+  }
+
+  .textx button{
+    width: 130px;
+    padding: 5px;
+  }
+
+  .icons{
+      transform: translate(-60px);
+  }
+
+  .icons i {
+      font-size: 20px;
+  }
+}
+
+
+/* ------------------------------------------------------------------------ A B O U T   -------------------------------------------------------------*/
+
+
+
+.about{
+    margin: 0 auto;
+    padding: 50px;
+    position: relative;
+}
+
+
+
+.ghiorghtoaie , .ghiorghtoaie span{
+    font-size: 32px;
+    text-align: center;
+}
+
+.xh2d{
+    font-size: 23px;
+    text-align: center;
+}
+
+
+.aboutintro h1 {
+    margin: 0 auto;
+    color: #14171B;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    width: 40%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.aboutintro{
+    position: relative;
+    padding: 50px;
+    margin-bottom: 40px;
+    padding-top: 10px;
+}
+
+.about hr{
+    border-top: 0.1px solid blueviolet;
+    width: 50px;
+    opacity: 0.8;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.xpi{
+    font-size: 25px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: blueviolet; 
+    padding: 10px 0px;
+}
+
+.xpd{
+    font-size: 16px; 
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------------ BANNER   -------------------------------------------------------------*/
+
+
+
+
+.banner{
+    background-color: black;
+    margin: 40px;
+    border-radius: 10px;
+    padding-bottom: 40px;
+}
+
+.banner hr{
+    border: 0;
+    border-top: 0.1px solid blueviolet;
+    width: 50px;
+    opacity: 0.8;
+    position: relative;
+    background-color: blueviolet;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 40px 0px;
+    margin-top: 0;
+}
+
+.banner h2 , .banner h2 span {
+    color: white;
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 0px;
+}
+
+.imagex{
+    text-align: center;
+}
+
+.mehpic2{
+    width: 350px;
+    height: 350px;
+}
+
+
+.info{
+    display: none;
+}
+
+.info p{
+    font-size: 20px;
+    color: white;
+}
+
+.mehxy{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.mehxy:hover{
+    -webkit-filter: brightness(45%);
+    transition: all 0.6s ease;
+}
+
+.mehxy:hover + .info{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 100;
+    display: block;
+}
+
+
+/* ----------------------------------------------------------- FORM ----------------------------------------------------------- */
+
+
+.formy{
+    margin: 0px auto;
+    width: 70%;
+}
+
+.xyz{
+    border: none;border-bottom: 1px solid blueviolet;margin-top:10px ;
+    height: 40px;outline: none;width: 100%;background-color: white;
+    font-size: 16px;
+}
+
+
+.xyz:focus{
+    transition: 0.2s ease-in-out;
+    border: none;
+    border-bottom: 1px solid rgb(10, 10, 10);
+}
+
+.formx{
+    margin: 160px 40px;
+} 
+
+.mmm{
+    width: 45%;
+}
+
+.lilform{
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+}
+
+
+.labelx{
+    font-size: 18px;
+    margin-top:20px ;
+}
+
+.formx hr{
+    background-color: blueviolet;
+    border-top: 0.1px solid blueviolet;
+    width: 50px;
+    opacity: 1;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0px;
+    margin-top: 0;
+}
+
+.formxyz{
+    font-size: 14px;
+}
+
+
+/* ----------------------------------------------------------- FOOTER ----------------------------------------------------------- */
+
+.footerb{
+    background-color: black;
+    padding: 30px;
+}
+
+.elm{
+    text-align: center;
+}
+
+.elm i{
+    font-size: 30px;
+    color: white;
+}
+
+.elm i:hover{
+    color: blueviolet;
+}
+
+.fh2{
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.fhr{
+    width: 50px;
+    align-self: center;
+    position: relative;
+    left: 50%;
+    background-color: blueviolet;
+    border: 0;
+    border-bottom: 0.1px solid blueviolet;
+    padding: 0;
+    opacity: 0.7;
+    transform: translate(-50%);
+    margin: 20px 0px 40px 0px;
+}
+
+/* ------------------------------------------------------------------------ C O D E   -------------------------------------------------------------*/
+
+.code{
+    padding: 30px;
+}
+
+.code h1{
+    color: black;
+    font-size: 32px;
+    text-align: center;
+}
+
+.code hr{
+    border: 0.1px solid blueviolet;
+    width: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0px;
+}
+
+
+/* ----------------------------------------------------------- lbanenr ----------------------------------------------------------- */
+
+.lbannerx{
+   background: url('https://cdn.discordapp.com/attachments/931981882520895538/1012570901868458035/unknown.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+    margin: 40px;
+    height: 360px;
+    border-radius: 10px;
+    background-position: center;
+    text-align: center;
+    margin-right: 40px;
+    position: relative;
+}
+
+.rbg h2{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.rbg hr{
+    border-top: 0.1px solid blueviolet;
+    opacity: 1;
+    width: 50px;
+    position: relative;
+    left: 50%;transform: translate(-50%);
+}
+
+
+.reviews{
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.divr1{
+    margin: 20px;
+}
+
+.divr1 p{
+    font-size: 15px;
+}
+
+/* ----------------------------------------------------------- MQ ----------------------------------------------------------- */
+
+.all{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.mehpic2{
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 754px){
+    .all{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .all{
+        display: none;
+    }
+
+    .logo{
+        font-size: 20px;
+        color: blueviolet;
+        text-align: center;
+        
+    }
+
+    .navbarx{
+        display: flex;
+        flex-flow: column;
+        padding: 10px;
+    }
+
+    .tags{
+        display: flex;
+       justify-content: space-evenly;
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+        align-self: center;
+    }
+
+    .elm i{
+        font-size: 23px;
+    }
+
+    .formx h2{
+        font-size: 26px;
+    }
+
+    .fh2{
+        font-size: 26px;
+    }
+
+    .textx{
+        position: relative;
+        left: 0px;
+        transform: translate(0px);
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+    }  
+
+
+    .textx button{
+       position: relative;
+    }
+    
+    .textx h1{
+        color: white;
+       
+    }
+
+
+    .tags a{
+        font-size: 11px;
+        align-self: center;
+        padding: 20px 0px;
+        text-align: center;
+        transform: translate(-10px);
+    }
+
+
+    .contactx{
+        width: 100%;
+    }
+
+    .icons i{
+        font-size: 15px;
+        padding: 0px;
+        margin: 15px;
+        
+    }
+
+    .aboutintro{
+        padding: 0;
+    }
+
+    .aboutintro h1{
+        width: 100%;
+        margin: 40px 0px;
+    }
+
+    .impx2{
+        padding: 10px;
+    }
+
+    .about h1, .about h1 span {
+        font-size: 24px;
+    }
+
+    .aboutintro h1{
+        font-size: 15px;
+    }
+
+    .xh1d{
+        font-size: 18px;
+    }
+
+    .xpd{
+        font-size: 13px;
+    }
+
+    .banner h1{
+        font-size: 25px;
+        padding: 10px;
+    } 
+    
+    .banner hr{
+        margin: 10px;
+    }
+
+    svg{
+        width: 9px;
+    }
+
+    .uk-modal-title{
+        font-size: 10px;
+    }
+
+    .labelx{
+        font-size: 12px;
+    }
+
+    .Gallery{
+        display: none;
+    }
+
+    .code{
+        display: none;
+    }
+    
+    .hero{
+        margin-top: 40px;
+    }
+
+    .hero-body h1{
+        font-size: 19px;
+        padding: 0;
+    }
+
+    .hero-body p, .hero-body p a{
+        font-size: 14px;
+        padding:0;
+    }
+
+    .herox{
+        text-align:center;
+    }
+
+    .ghiorghtoaie{
+        font-size: 26px;
+    }
+
+    .x2hd{
+        font-size: 17px;
+    }
+
+    .formy{
+        width: 100%;
+    }
+
+    .mehpic2{
+        width: 300px;
+        height: 200px;
+    }
+
+    .reviews{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textx button{
+        width: 50%;
+    }
+
+    .banner{
+        display: none;
+    }
+
+    .lbannerx{
+        display: none;
+    }
+
+    .formx{
+        margin: 80px 40px;
+        margin-top: 20px;
+    }
+
+    .ghiorghtoaie{
+        font-size: 1.7rem;
+    }
+
+
+}

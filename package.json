@@ -1,0 +1,25 @@
+{
+  "name": "BRLS",
+  "version": "2.0.0",
+  "description": "BRLS official website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Marshy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "btoa": "^1.2.1",
+    "discord-oauth2": "^2.6.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.9",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.6",
+    "react": "^17.0.1",
+    "stripe": "^8.129.0"
+  }
+}
